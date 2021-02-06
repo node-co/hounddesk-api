@@ -1,3 +1,3 @@
 export default function logger(): string {
-  return 'it workssdad';
+  return 'it works';
 }
