@@ -10,7 +10,7 @@
     "build:watch": "tsc --watch",
     "clean": "rm -Rf dist/",
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
-    "format": "prettier --write \"src/*.ts\" \"test/*.test.ts\"",
+    "format": "prettier --write \"src/*.ts\"",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --fix --ext .js,.ts",
     "prepare": "tsc",
@@ -71,9 +71,6 @@
     "reporters": [
       "jest-tap-reporter"
     ]
-  },
-  "directories": {
-    "test": "test"
   },
   "husky": {
     "hooks": {
