@@ -1,7 +1,7 @@
 {
-  "name": "@hounddesk/pkg-template",
+  "name": "houndesk-api",
   "version": "1.0.0",
-  "description": "The best starting point for your new NPM package",
+  "description": "Hounddesk API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:hounddesk/pkg-template.git"
+    "url": "git@github.com:node-co/hounddesk-api.git"
   },
   "keywords": [
     "nodejs npm"
@@ -29,14 +29,14 @@
   "author": "R.R <degrammer@pm.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hounddesk/pkg-template/issues"
+    "url": "https://github.com/node-co/hounddesk-api/issues"
   },
-  "homepage": "https://github.com/hounddesk/pkg-template#readme",
+  "homepage": "https://github.com/node-co/hounddesk-api#readme",
   "devDependencies": {
-    "@types/jest": "^25.1.4",
-    "@types/node": "^13.9.1",
-    "@typescript-eslint/eslint-plugin": "^3.0.2",
-    "@typescript-eslint/parser": "^3.0.2",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^13.13.47",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jest": "^23.13.2",
@@ -48,7 +48,19 @@
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@hapi/boom": "^9.1.2",
+    "@hapi/hapi": "^20.1.2",
+    "@hapi/joi": "^17.1.1",
+    "@hounddesk/bones-types": "^1.3.2",
+    "@hounddesk/hapi-authorization-header": "^1.1.1",
+    "@hounddesk/password-policy": "^1.1.2",
+    "@hounddesk/plugin-firebase-authz": "^1.1.2",
+    "@hounddesk/plugin-firebase-users": "^1.1.9",
+    "@types/convict": "^5.2.2",
+    "convict": "^6.0.1",
+    "typeorm": "^0.2.31"
+  },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
