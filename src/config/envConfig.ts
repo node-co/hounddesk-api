@@ -1,3 +1,8 @@
+/**
+ * Environment variables configuration.
+ * Locally you can add your own .env file using .env.example as a guidance.
+ */
+
 import convict from 'convict';
 import dotenv from 'dotenv';
 import { PasswordPolicyType } from '@hounddesk/password-policy/lib/types';
@@ -11,6 +16,7 @@ if (
   dotenv.config();
 }
 
+// Parse Private Key (used for Firebase)
 function parseKey(keyName: string) {
   if (process.env[keyName]) {
     process.env[keyName] = process.env[keyName]?.replace(/\\n/g, '\n');
@@ -48,6 +54,17 @@ export default convict<Configuration>({
         default: '',
         sensitive: true,
       },
+      passwordPolicy: {
+        default: 'low',
+        format: [
+          PasswordPolicyType.Complex,
+          PasswordPolicyType.Easy,
+          PasswordPolicyType.Low,
+          PasswordPolicyType.Medium,
+          PasswordPolicyType.Normal,
+        ],
+        env: 'HOUNDDESK_PUBLIC_POLICY_TYPE',
+      },
     },
     admin: {
       projectId: {
@@ -72,6 +89,17 @@ export default convict<Configuration>({
         env: 'HOUNDDESK_ADMIN_FIREBASE_SIGNIN_URL',
         default: '',
         sensitive: true,
+      },
+      passwordPolicy: {
+        default: 'low',
+        format: [
+          PasswordPolicyType.Complex,
+          PasswordPolicyType.Easy,
+          PasswordPolicyType.Low,
+          PasswordPolicyType.Medium,
+          PasswordPolicyType.Normal,
+        ],
+        env: 'HOUNDDESK_ADMIN_POLICY_TYPE',
       },
     },
   },
@@ -156,18 +184,10 @@ export default convict<Configuration>({
       default: '/admin',
       env: 'ROUTES_ADMIN_PREFIX',
     },
-  },
-  securitySettings: {
-    passwordPolicy: {
-      default: 'low',
-      format: [
-        PasswordPolicyType.Complex,
-        PasswordPolicyType.Easy,
-        PasswordPolicyType.Low,
-        PasswordPolicyType.Medium,
-        PasswordPolicyType.Normal,
-      ],
-      env: 'SECURITY_PWD_POLICY',
+    publicPrefix: {
+      format: String,
+      default: '/user',
+      env: 'ROUTES_PUBLIC_PREFIX',
     },
   },
 });

@@ -1,12 +1,53 @@
-# pkg-template
+# Welcome to Hounddesk API
 
-The best starting point for your new Node project
+Welcome to Hounddesk, we're an Open Source project from the [NodeCo](https://github.com/node-co) community.
+Our goal is to provide a better way to connect with your community. Our roadmap is under construction at the moment.
+
+## Contributing
+
+Currently we're planning the project and preparing an early version, but no worries, you will be able to collaborate soon !
+
+## Our Stack
+
+We are using many different technologies, but our main stack is Node.js using the following tools:
+
+| Name         |          Type           |
+| ------------ | :---------------------: |
+| Mongo        |         Storage         |
+| Google Cloud |   API hosting via GKE   |
+| Firebase     |          Authz          |
+| Typescript   | Static type definitions |
+| Bugsnag      |   API logs management   |
+
+## Concepts
+
+Hounddesk is build around the concept of creating plugable modules in order to encourage low coupling (that means reducing the direct dependency for another component).
+
+# Hounddesk Authorization and Authentication
+
+Authentication and Authorization is one of the core modules of any application.
+For Hounddesk is not the exception, we want to be able to provide a secure system without compromising flexibility.
+
+We will leverage Hapi authentication strategy for that.
+
+### Supported strategies:
+
+| Name                                                                                               |                Type                |
+| -------------------------------------------------------------------------------------------------- | :--------------------------------: |
+| [@hounddesk/plugin-firebase-authz](https://www.npmjs.com/package/@hounddesk/plugin-firebase-authz) |           Authorization            |
+| [@hounddesk/plugin-firebase-users](https://www.npmjs.com/package/@hounddesk/plugin-firebase-users) | Authentication and User management |
+| [@hounddesk/password-policy](https://www.npmjs.com/package/@hounddesk/password-policy)             |          Password policy           |
+
+## Notes
+
+Hounddesk core libraries are Open Source too!
+They are under the project [Bones](https://github.com/hounddesk/bones#readme)
+
+Hounddesk and Hounddesk core libraries are officially supported by [NodeCo Community](https://github.com/node-co)
 
 ## Installation
 
-This is a GitHub template repository [Read more](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
-
-It provides basic foundations for package authors, but it can be used as a good starting point for your Node.js application
+This is a GitHub template repository created from our open source project [pkg-template](https://github.com/hounddesk/pkg-template)
 
 Before using, [download and install Node.js](https://nodejs.org/en/download/).
 Node.js 10.16.3 or higher is recommended.
@@ -84,10 +125,3 @@ The following extensions works great alongside with this setup:
 
 - [Prettier](https://github.com/prettier/prettier-vscode)
 - [Jest](https://github.com/jest-community/vscode-jest) - once installed, enable the runner >> Jest > Start runner
-
-## Usage for publishing packages
-
-The recommended approach is to create a scoped public package (if you are not using private packages)
-[Read more about scoped packages here](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages)
-
-If you're using the package.json from the template you may want to change the name and references to pgk-template and change it to your library.

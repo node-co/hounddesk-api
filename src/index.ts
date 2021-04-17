@@ -4,7 +4,8 @@ import registerModules from './modules/register';
 async function startServer() {
   // Initialize Hapi Server
   const server = initializeServer();
-  // Register modules (APIs for this project)
+  // Register modules
+  // Service APIs are loaded as modules too.
   await registerModules(server);
   // Start the server
   await server.start();
