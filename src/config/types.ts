@@ -42,18 +42,13 @@ export interface Firebase {
   privateKey: string;
   clientEmail: string;
   signin_url: string;
+  passwordPolicy?: string;
 }
 
 export interface AuthzClient {
   public: Firebase;
   admin: Firebase;
 }
-
-export enum FirebaseStrategy {
-  Public = 'firebase-public',
-  Admin = 'firebase-admin',
-}
-
 export interface Server {
   host: string;
   port: number;
@@ -63,10 +58,7 @@ export interface Server {
 
 export interface RoutesConfig {
   adminPrefix: string;
-}
-
-export interface SecuritySettings {
-  passwordPolicy: string;
+  publicPrefix: string;
 }
 
 export interface BugsnapSettings {
@@ -82,18 +74,9 @@ export interface Configuration {
   server: Server;
   database: DatabaseConfig;
   routesConfig: RoutesConfig;
-  securitySettings: SecuritySettings;
 }
 
 export interface ApplicationState extends ServerApplicationState {
   connection: Connection;
   publicFirebaseService: admin.app.App;
-}
-
-export interface ModulePermissions {
-  read?: string;
-  update?: string;
-  delete?: string;
-  list?: string;
-  create?: string;
 }
