@@ -71,6 +71,6 @@ If you want to use this provider, you need to enable it first in Firebase consol
 
 The Firebase plugin receives the signinUrl (optional), since we provide Firebase as default auth strategy, we have an environment variable for it (HOUNDDESK_PUBLIC_FIREBASE_SIGNIN_URL and HOUNDDESK_ADMIN_FIREBASE_SIGNIN_URL), the url will look like this:
 
-Sign in url: **https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=Web API Key**
+Sign in url: **https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=Web_API_Key**
 
 Once you enable Email/Password provider a Web API Key will be available in **Project settings > Your project**
