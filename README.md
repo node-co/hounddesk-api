@@ -1,13 +1,17 @@
-# Welcome to Hounddesk API
+# 👋 Welcome to Hounddesk API
 
 Welcome to Hounddesk, we're an Open Source project from the [NodeCo](https://github.com/node-co) community.
 Our goal is to provide a better way to connect with your community. Our roadmap is under construction at the moment.
 
-## Contributing
+**Join our community**
+
+<a href="https://node-colombia.slack.com">![alt text](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white "Slack logo")</a>
+
+## 🧑‍🤝‍🧑 Contributing
 
 Currently we're planning the project and preparing an early version, but no worries, you will be able to collaborate soon !
 
-## Our Stack
+## 🧰 Our Stack
 
 We are using many different technologies, but our main stack is Node.js using the following tools:
 
@@ -19,7 +23,7 @@ We are using many different technologies, but our main stack is Node.js using th
 | Typescript   | Static type definitions |
 | Bugsnag      |   API logs management   |
 
-## Concepts
+## 📘 Concepts
 
 Hounddesk is build around the concept of creating plugable modules in order to encourage low coupling (that means reducing the direct dependency for another component).
 
@@ -38,14 +42,14 @@ We will leverage Hapi authentication strategy for that.
 | [@hounddesk/plugin-firebase-users](https://www.npmjs.com/package/@hounddesk/plugin-firebase-users) | Authentication and User management |
 | [@hounddesk/password-policy](https://www.npmjs.com/package/@hounddesk/password-policy)             |          Password policy           |
 
-## Notes
+## ✏️ Notes
 
 Hounddesk core libraries are Open Source too!
 They are under the project [Bones](https://github.com/hounddesk/bones#readme)
 
 Hounddesk and Hounddesk core libraries are officially supported by [NodeCo Community](https://github.com/node-co)
 
-## Installation
+## 💻 Installation
 
 This is a GitHub template repository created from our open source project [pkg-template](https://github.com/hounddesk/pkg-template)
 
