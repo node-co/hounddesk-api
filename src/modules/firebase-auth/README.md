@@ -9,6 +9,8 @@ We provide by default a firebase strategy that supports administrative routes.
 We encourage you to use a separate pool of users, that means, to keep 2 separate projects in Firebase.
 Our firebase plugins are organized around that concept.
 
+![firebase logo](https://avatars.githubusercontent.com/u/1335026?s=200&v=4)
+
 ## How the firebase plugins works
 
 Authentication and authorization are something core for our application, we need to provide mechanisms for:
