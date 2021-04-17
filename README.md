@@ -5,7 +5,7 @@ Our goal is to provide a better way to connect with your community. Our roadmap 
 
 **Join our community**
 
-<a href="https://node-colombia.slack.com">![alt text](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white "Slack logo")</a>
+<a target="_blank" href="https://node-colombia.slack.com">![alt text](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white "Slack logo")</a>
 
 ## 🧑‍🤝‍🧑 Contributing
 
