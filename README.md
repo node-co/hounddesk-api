@@ -3,6 +3,8 @@
 Welcome to Hounddesk, we're an Open Source project from the [NodeCo](https://github.com/node-co) community.
 Our goal is to provide a better way to connect with your community. Our roadmap is under construction at the moment.
 
+<img src="https://avatars.githubusercontent.com/u/62183765?s=200&v=4" />
+
 **Join our community**
 
 <a target="_blank" href="https://node-colombia.slack.com">![alt text](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white "Slack logo")</a>
